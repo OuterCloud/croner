@@ -13,15 +13,16 @@
 ## 组成
 
     测试脚本仓库
-        在test文件夹的test_scripts文件夹中
+        *在test文件夹的test_scripts文件夹中
         在config文件中配置测试脚本仓库所在的git路径
-        执行测试时自动下载/更新
+        执行测试时自动从配置的git路径下载/更新测试用例
     测试工具
-        在test文件夹的test_tools文件夹中
+        *在test文件夹的test_tools文件夹中
         提供数据驱动方法
     定时任务
-        在lib文件夹中
-        利用python cron定时执行测试
+        *在lib文件夹中的cron.py文件中
+        利用python cron定时执行测试
     报警功能
+        *在lib文件夹中的cron.py文件中
         每次执行完测试后对测试结果进行分析
         若有失败的测试结果立刻报警（发邮件/发...）
