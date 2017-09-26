@@ -40,13 +40,15 @@
 2. 已安装python的pip工具
 3. 已设置PowerShell脚本执行策略为Unrestricted
     
-## 2. 安装
+## 2. 配置与安装
 
-    执行setup.ps1文件
+1. 配置git安装路径的bin目录路径到path环境变量（例如：C:\Program Files\Git\bin）
+2. 执行setup.ps1文件
 
 ## 3. 使用
 
 1. 编写测试用例脚本（示例如下）
+
 ```python
 # -*- coding: utf-8 -*-
 from nose.tools import *
@@ -67,7 +69,8 @@ class Test():
         setattr(self, 't_data', t_data[t_data_number-1])
         assert_equal(self.t_data['retCode'],"200")
 ```
-    2. 执行start.ps1文件
+
+2. 执行start.ps1文件
 
 ## 4. 帮助
 
