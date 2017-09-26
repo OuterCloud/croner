@@ -43,7 +43,7 @@
 ## 2. 配置与安装
 
 1. 配置git安装路径的bin目录路径到path环境变量（例如：C:\Program Files\Git\bin）
-2. 执行setup.ps1文件
+2. 执行setup.ps1文件安装requirements.txt文件中指定的python库
 
 ## 3. 使用
 
@@ -70,7 +70,7 @@ class Test():
         assert_equal(self.t_data['retCode'],"200")
 ```
 
-2. 执行start.ps1文件
+2. 执行start.ps1文件开始测试
 
 ## 4. 帮助
 
