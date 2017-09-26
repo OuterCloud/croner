@@ -42,3 +42,6 @@
 ## 3. 使用
 
     执行start.ps1文件
+
+## 4. 帮助
+    [数据驱动工具的使用方法](http://www.cnblogs.com/LanTianYou/p/7298200.html)
