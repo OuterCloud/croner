@@ -53,12 +53,15 @@
 ```python
 # -*- coding: utf-8 -*-
 from nose.tools import *
-from test_data_tool import *
 from parameterized import parameterized
+import os
+import sys
+from test.test_tools.test_data_tool import *
 
 @istest
 class Test():
-    file_path = "QueryTradeInfoTester.csv"
+    test_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    file_path = os.path.join(test_path,"test_data","QueryTradeInfoTester.csv")
     
     @parameterized.expand([
         (file_path, 1),
@@ -68,6 +71,7 @@ class Test():
     def test_1(self, file_path, t_data_number):
         t_data = get_t_data(file_path)
         setattr(self, 't_data', t_data[t_data_number-1])
+        print(self.t_data['retCode'])
         assert_equal(self.t_data['retCode'],"200")
 ```
 
