@@ -39,6 +39,7 @@
 1. 已安装python3
 2. 已安装python的pip工具
 3. 已设置PowerShell脚本执行策略为Unrestricted
+4. 已安装python的nose框架并完成了2to3的转换
     
 ## 2. 配置与安装
 
