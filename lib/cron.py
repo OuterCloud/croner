@@ -8,7 +8,7 @@ import git
 
 croner_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 result_path = os.path.join(croner_path,"test","test_results","result.html")
-command = "nosetests --with-html-output --html-out-file="+result_path+" --with-setup-ittr"
+command = "nosetests --processes="+sys.argv[2]+" --with-html-output --html-out-file="+result_path+" --with-setup-ittr"
 
 #测试用例运行任务
 def test_task():
