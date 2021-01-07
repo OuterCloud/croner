@@ -28,7 +28,7 @@ Jinja2==2.9.6
 jira==1.0.10
 jpype1==0.6.2
 locustio==0.7.5
-lxml==3.8.0
+lxml==4.6.2
 MarkupSafe==1.0
 msgpack-python==0.4.8
 Naked==0.1.31
