@@ -66,7 +66,7 @@ pytest-allure-adaptor==1.7.8
 pytz==2017.2
 pyuserinput==0.1.12
 pywin32==221
-PyYAML==3.12
+PyYAML==5.4
 pyzmq==16.0.2
 requests==2.17.3
 requests-oauthlib==0.8.0
